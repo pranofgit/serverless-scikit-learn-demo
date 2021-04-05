@@ -2,6 +2,11 @@ name: Train and Deploy
 
 on: 
   workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron:  '0 8 * * MON-FRI'
 
 jobs:
   train:
