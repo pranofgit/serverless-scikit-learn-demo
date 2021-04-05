@@ -1,6 +1,7 @@
 name: Train and Deploy
 
-on:[workflow_dispatch] 
+on: 
+  workflow_dispatch:
 
 jobs:
   train:
