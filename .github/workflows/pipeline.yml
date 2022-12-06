@@ -42,9 +42,9 @@ jobs:
 
     - name: Upload new model and associated metrics
       run: |
-        gsutil cp artifacts/pipeline.joblib gs://sphere-ml-pipeline.appspot.com/ml-heart-disease/models/latest.joblib
-        gsutil cp artifacts/pipeline.joblib gs://sphere-ml-pipeline.appspot.com/ml-heart-disease/models/${{ env.GITHUB_RUN_ID }}.joblib
-        gsutil cp artifacts/metrics.json gs://sphere-ml-pipeline.appspot.com/ml-heart-disease/models/metrics/${{ env.GITHUB_RUN_ID }}.joblib
+        gsutil cp artifacts/pipeline.joblib gs://automate1-370707.appspot.com/models/latest.joblib
+        gsutil cp artifacts/pipeline.joblib gs://automate1-370707.appspot.com/models/${{ env.GITHUB_RUN_ID }}.joblib
+        gsutil cp artifacts/metrics.json gs://automate1-370707.appspot.com/models/metrics/${{ env.GITHUB_RUN_ID }}.joblib
 
     - name: Deploy model as Cloud Function
       run: | 
