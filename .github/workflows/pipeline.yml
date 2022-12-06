@@ -34,7 +34,7 @@ jobs:
     
     - name: Download the latest dataset
       run: |
-        gsutil cp gs://sphere-ml-pipeline.appspot.com/ml-heart-disease/datasets/dataset.csv datasets/default.csv
+        gsutil cp gs://automate1a/heart.csv datasets/default.csv
 
     - name: Run training task
       run: |
