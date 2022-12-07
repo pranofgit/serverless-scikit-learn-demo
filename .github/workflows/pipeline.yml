@@ -12,10 +12,11 @@ jobs:
   train:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    -id : auth
+     uses: actions/checkout@v2
 
     - name: Setup GCP client
-      uses: google-github-actions/setup-gcloud@v1
+      uses: google-github-actions/setup-gcloud@main
       with:
         version: '290.0.1'
         project_id: ${{ secrets.GCP_PROJECT_ID }}
